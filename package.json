@@ -1,0 +1,38 @@
+{
+  "name": "m-hooks",
+  "version": "1.0.0",
+  "description": "React custom hooks collection",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun run tsup",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "typescript"
+  ],
+  "author": "Mineru98",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
